@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.navbar li {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .navbar li:hover {
+    color: black; /* Change text color on hover */
+  }
+  
+  .navbar li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Adjust position of the underline */
+    height: 2px; /* Height of the underline */
+    background-color: black; /* Color of the underline */
+    transform: scaleX(0); /* Start with no underline */
+    transition: transform 0.3s ease; /* Smooth transition for the underline */
+  }
+  
+  .navbar li:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+  }
