@@ -1,4 +1,6 @@
+import { Card } from "antd";
 import React from "react";
+import ProfileCard from "./ProfileCard";
 
 const Home = () => {
   return (
@@ -25,6 +27,13 @@ const Home = () => {
           <div className="mt-5">
             <h1>Articles</h1>
           </div>
+        </div>
+        <div className="flex justify-end">
+         <ProfileCard />
+        </div>
+        <div>
+          <button className="text-white bg-black px-3 py-2 m-3 rounded-md shadow-md">Visit Now</button>
+          <button>About Me</button>
         </div>
       </div>
     </>
