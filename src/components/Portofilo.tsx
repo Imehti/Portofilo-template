@@ -11,7 +11,7 @@ const Portofilo = () => {
           <h1 className="text-black text-2xl font-serif">
             Our Recent Projects
           </h1>
-          <p className="max-w-lg text-center font-light">
+          <p className="md:max-w-lg max-w-sm text-center font-light">
             There are many variations of passages of Lorem Ipsum available but
             the majority have suffered alteration in some form
           </p>
