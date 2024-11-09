@@ -16,13 +16,13 @@ const ProjectLinks = () => {
   ];
 
   return (
-    <div className="p-12">
-      <ul className="flex justify-evenly text-gray-700">
+    <div className="p-4 md:p-12"> 
+      <ul className="flex flex-wrap justify-center text-gray-700">
         {links.map((link) => (
-          <li key={link}>
+          <li key={link} className="m-2">
             <a
               href="/"
-              onClick={() => setActiveLink(link)} // Update active link on click
+              onClick={() => setActiveLink(link)}
               className={`px-4 py-2 rounded transition duration-300 ${
                 activeLink === link
                   ? "bg-blue-600 text-white border border-blue-600"
