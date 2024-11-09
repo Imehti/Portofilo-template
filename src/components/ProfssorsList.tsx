@@ -11,7 +11,7 @@ const ProfssorsList = () => {
           majority have suffered alteration in some form
         </p>
       </div>
-      <div className="mt-10 p-12">
+      <div className="mt-10 p-6 md:p-12">
       <Professors />
       </div>
     </>
