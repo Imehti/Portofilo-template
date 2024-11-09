@@ -22,7 +22,7 @@ const ShareOpinion = () => {
                 Name
               </label>
               <input
-                className="rounded-md shadow-lg p-1.5 px-8"
+                className="rounded-md shadow-lg p-1.5 px-14"
                 type="text"
                 placeholder="David John"
               />
@@ -30,7 +30,7 @@ const ShareOpinion = () => {
                 Email
               </label>
               <input
-                className="rounded-md shadow-lg p-1.5 px-8"
+                className="rounded-md shadow-lg p-1.5 px-14"
                 type="text"
                 placeholder="DavidJohn@gmail.com"
               />
