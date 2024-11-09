@@ -38,7 +38,7 @@ const Footer = () => {
     <>
       <div className="mt-10">
         <div className="">
-          <div className="flex justify-around p-8">
+          <div className="flex flex-col lg:flex-row justify-around p-8">
             <div className="flex flex-col space-y-4">
               <h1 className="font-extrabold">
                 Ar<span className="text-blue-800">chi</span>vi
@@ -66,7 +66,7 @@ const Footer = () => {
               </div>
             </div>
             {footerLinks.map((link, index) => (
-              <div className="flex flex-col space-y-3" key={index}>
+              <div className="flex flex-col mt-2 space-y-3" key={index}>
                 <h2 className="font-bold">{link.title}</h2>
                 <ul className="font-thin">
                   {link.links.map((subLink, subIndex) => (
@@ -80,7 +80,7 @@ const Footer = () => {
                 </ul>
               </div>
             ))}
-            <div>
+            <div className="mt-4 md:mt-0">
               <h2 className="font-bold">Follow Us On</h2>
               <div className="flex space-x-1 mt-3">
                 {socials.map((icon, index) => (
