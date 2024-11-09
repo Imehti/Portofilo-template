@@ -1,9 +1,36 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 const footerLinks = [
-  { title: 'Resources', links: ['Sass Development', 'Our Products', 'Our Projects', 'User  Strategy'] },
-  { title: 'Company', links: ['About Landio', 'Contact & Support', 'Success History', 'Setting & Privacy'] },
-  { title: 'Quick Links', links: ['Premium Support', 'Our Services', 'Know Our Team', 'Download App'] },
+  {
+    title: "Resources",
+    links: [
+      "Sass Development",
+      "Our Products",
+      "Our Projects",
+      "User  Strategy",
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      "About Landio",
+      "Contact & Support",
+      "Success History",
+      "Setting & Privacy",
+    ],
+  },
+  {
+    title: "Quick Links",
+    links: ["Premium Support", "Our Services", "Know Our Team", "Download App"],
+  },
+];
+
+const socials = [
+  "https://twitter.com",
+  "https://facebook.com",
+  "https://youtube.com",
+  "https://linkedin.com",
 ];
 
 const Footer = () => {
@@ -43,11 +70,31 @@ const Footer = () => {
                 <h2 className="font-bold">{link.title}</h2>
                 <ul className="font-thin">
                   {link.links.map((subLink, subIndex) => (
-                    <li className="hover:text-blue-700 cursor-pointer" key={subIndex}>{subLink}</li>
+                    <li
+                      className="hover:text-blue-700 cursor-pointer"
+                      key={subIndex}
+                    >
+                      {subLink}
+                    </li>
                   ))}
                 </ul>
               </div>
             ))}
+            <div>
+              <h2 className="font-bold">Follow Us On</h2>
+              <div className="flex space-x-1 mt-3">
+                {socials.map((icon, index) => (
+                  <SocialIcon
+                    key={index}
+                    url={icon}
+                    style={{ height: 30, width: 30 }}
+                  /> // Set the size here
+                ))}
+              </div>
+              <div className="mt-4">
+                <span className="font-thin">2024 Archivi</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
