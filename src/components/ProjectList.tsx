@@ -8,7 +8,7 @@ const ProjectList = () => {
     <div>
 
  
-      <div className="grid grid-cols-3 gap-y-32 px-12 ml-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-32 px-12 md:ml-24 justify-center">
         {projectImages.map((image) => (
           <div className="relative">
             <img
@@ -17,7 +17,7 @@ const ProjectList = () => {
               src={image.src}
               alt={image.content}
             />
-            <Card className="absolute -bottom-28 shadow-2xl rounded-2x w-[60%] ml-7">
+            <Card className="absolute -bottom-28 shadow-2xl rounded-2x w-[75%] md:w-[60%] md:ml-7 ml-12">
               <div className="flex flex-col justify-center space-y-2 items-center">
               <p className="text-blue-600">{image.group}</p>
               <h1 className="text-black text-lg font-bold">{image.content}</h1>
