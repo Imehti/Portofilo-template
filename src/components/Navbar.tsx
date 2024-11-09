@@ -11,7 +11,7 @@ const Navbar = () => {
           </h1>
         </div>
         <div className="">
-          <ul className="flex space-x-10 text-gray-800">
+          <ul className="flex md:space-x-10 space-x-5 text-gray-800">
             <li>Home</li>
             <li>Publications</li>
             <li>Contact</li>
@@ -19,7 +19,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="w-14">
+        <div className="md:w-14 w-10">
           <img src='azadlogo.jpg' alt="Azad-University" />
         </div>
       </nav>
