@@ -88,7 +88,7 @@ const Footer = () => {
                     key={index}
                     url={icon}
                     style={{ height: 30, width: 30 }}
-                  /> // Set the size here
+                  /> 
                 ))}
               </div>
               <div className="mt-4">

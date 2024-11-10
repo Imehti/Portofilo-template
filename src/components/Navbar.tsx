@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Navbar = () => {
   return (
     <>
@@ -20,7 +19,7 @@ const Navbar = () => {
         </div>
 
         <div className="md:w-14 w-10">
-          <img src='azadlogo.jpg' alt="Azad-University" />
+          <img src="azadlogo.jpg" alt="Azad-University" />
         </div>
       </nav>
     </>

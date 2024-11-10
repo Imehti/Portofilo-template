@@ -26,9 +26,11 @@ const columns: TableProps<DataType>["columns"] = [
           alt={record.name}
           className="rounded-full w-14 md:w-20"
         />
-        <div className="flex flex-col ml-2"> {/* Added margin-left for spacing */}
+        <div className="flex flex-col ml-2">
           <span className="font-semibold text-xs md:text-sm">{text}</span>
-          <span className="text-gray-600 text-xs md:text-sm">{record.email}</span>
+          <span className="text-gray-600 text-xs md:text-sm">
+            {record.email}
+          </span>
         </div>
       </div>
     ),
@@ -38,7 +40,7 @@ const columns: TableProps<DataType>["columns"] = [
     dataIndex: "title",
     key: "title",
     render: (text, record) => (
-      <div className="flex flex-col ml-12 md:ml-0"> {/* Added margin-top for spacing */}
+      <div className="flex flex-col ml-12 md:ml-0">
         <span className="text-xs md:text-sm">{text}</span>
         <span className="text-blue-700">{record.group}</span>
       </div>
